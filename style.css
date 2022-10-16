@@ -1,0 +1,12 @@
+#ingredients {
+    background-image: url("assets/list-bg.png");
+    box-shadow: 0px 10px 5px silver;
+}
+
+#ingredients ul {
+    list-style-type: none;
+}
+
+#ingredients input[type=checkbox]:checked + label {
+    text-decoration: line-through;
+}

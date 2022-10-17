@@ -1,6 +1,17 @@
+body {
+    margin: 0 150px;
+}
+
+hr.divider {
+   border-top: 1px dashed; 
+}
+
 #ingredients {
     background-image: url("assets/list-bg.png");
+    background-size: cover;
     box-shadow: 0px 10px 5px silver;
+    margin-bottom: 30px;
+    padding: 25px;
 }
 
 #ingredients ul {

@@ -1,9 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Dekko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600&display=swap');
+
 body {
-    margin: 0 150px;
+    margin: 0 300px;
+}
+
+div#header {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div#header-captions h1, div#header-captions h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+div#header-captions h1 {
+    font-family: 'Yellowtail', cursive;
+    font-size: 40px;
+}
+
+div#header-captions h3 {
+    font-size: 15px;
+    white-space: nowrap;
+    font-family: 'Nanum Gothic Coding', monospace;
+    text-transform: uppercase;
+}
+
+div#logo-group {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+div#logo-group img {
+    align-self: stretch;
+}
+
+div#icon-group {
+    display: flex;
+    gap: 15px;
 }
 
 hr.divider {
    border-top: 1px dashed; 
+}
+
+div#recipe img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+div#recipe h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 45px;
+    margin-bottom: 0;
+}
+
+div#recipe > p {
+    text-indent: 1.5em;
+    font-size: 20px;
+    font-family: 'Noto Nastaliq Urdu', serif;
+    line-height: 150%;
+}
+
+div#recipe div#post-date-and-print {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Nanum Gothic Coding', monospace;
+    text-transform: uppercase;
+}
+
+div#recipe div#post-date-and-print {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+div#recipe div#post-date-and-print div#print{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 
 #ingredients {
@@ -16,8 +101,57 @@ hr.divider {
 
 #ingredients ul {
     list-style-type: none;
+    columns: 2;
+    font-size: 24px;
+    font-family: 'Dekko', cursive;
 }
 
 #ingredients input[type=checkbox]:checked + label {
     text-decoration: line-through;
+}
+
+div#author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div#author div#author-data {
+    display: flex;
+    gap: 10px;
+}
+
+div#author div#author-data div#author-text h3 {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 24px;
+    margin: 0;
+}
+
+div#author div#author-data div#author-text p {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+div#author button {
+    height: 50px;
+    width: 150px;
+    background-color: #c9523a;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Nanum Gothic Coding', monospace; 
+    font-size: 15px
+}
+
+div#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+div#footer p {
+    margin-bottom: 0;
 }
